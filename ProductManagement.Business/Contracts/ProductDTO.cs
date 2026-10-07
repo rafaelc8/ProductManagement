@@ -21,8 +21,8 @@ namespace ProductManagement.Business.Contracts
                 Description = product.Description,
                 Price = product.Price,
                 Stock = product.Stock,
-                CreatedAt = product.CreatedAt,
-                UpdatedAt = product.UpdatedAt
+                CreatedAt = product.CreatedAt.ToLocalTime(),
+                UpdatedAt = product.UpdatedAt?.ToLocalTime()
             };
         }
     }
