@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="10.0.12" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.10.1" />
+    <PackageReference Include="Moq" Version="4.21.0" />
+    <PackageReference Include="xunit.v3" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProductManagement.Business\ProductManagement.Business.csproj" />
+    <ProjectReference Include="..\ProductManagement.Common\ProductManagement.Common.csproj" />
+    <ProjectReference Include="..\ProductManagement.DataAccess\ProductManagement.DataAccess.csproj" />
+    <ProjectReference Include="..\ProductManagement.Data\ProductManagement.Data.csproj" />
+  </ItemGroup>
+
+</Project>
